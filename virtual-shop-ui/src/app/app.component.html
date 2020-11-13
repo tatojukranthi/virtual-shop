@@ -44,7 +44,37 @@
       </ul>
       </mat-expansion-panel>
     </div>
-
+    <div id="categories" >
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Fruits & Vegies
+          </mat-panel-title> 
+        </mat-expansion-panel-header>
+        <ul>
+          <li *ngFor="let item of listOfFruitsAndVegies" id="item" > 
+            <mat-card class="example-card" >
+              <mat-card-header> 
+                <mat-card-title>{{item.itemName}}</mat-card-title> 
+            </mat-card-header>
+            <img mat-card-image  [src]="item.itemImageUrl"  id="item-image">
+            <mat-card-content>
+              <div>
+                <label>Brand : </label><span><b>{{item.brand}}</b></span>
+              </div>
+              <div>
+                <label>Price : </label>
+                <span><b>{{item.itemLatestPrice}}</b></span>  
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Add to cart</button> 
+            </mat-card-actions>
+          </mat-card>
+        </li> 
+      </ul>
+      </mat-expansion-panel>
+    </div>
 <div id="footer">
   
   <hr>
