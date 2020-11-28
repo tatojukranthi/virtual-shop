@@ -1,86 +1,24 @@
-<!-- Toolbar -->
- <div id="title">
-   <h3>Virtual Shop</h3>
- </div>
+<div id="title">
+  <h3>Virtual Shop</h3>
+</div>
 
 <div id="storeTitle">
-    <span>Local Foodz</span>
-  </div> 
-  <div>
-    <form>
-      <Label>Search Item: </Label><input/>
-      <button>Go</button>
-    </form>
-  </div>
+   <span>Local Foodsz</span>
+ </div> 
+ <div>
+   <form>
+     <Label>Search Item: </Label><input/>
+     <button  mat-button color="primary">Go</button>
+   </form>
+ </div>
 
-  <div id="categories" >
-      <mat-expansion-panel >
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Groceries
-          </mat-panel-title> 
-        </mat-expansion-panel-header>
-        <ul>
-          <li *ngFor="let item of listOfItems" id="item" > 
-            <mat-card class="example-card" >
-              <mat-card-header> 
-                <mat-card-title>{{item.itemName}}</mat-card-title> 
-            </mat-card-header>
-            <img mat-card-image  [src]="item.itemImageUrl"  id="item-image">
-            <mat-card-content>
-              <div>
-                <label>Brand : </label><span><b>{{item.brand}}</b></span>
-              </div>
-              <div>
-                <label>Price : </label>
-                <span><b>{{item.itemLatestPrice}}</b></span>  
-              </div>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>Add to cart</button> 
-            </mat-card-actions>
-          </mat-card>
-        </li> 
-      </ul>
-      </mat-expansion-panel>
-    </div>
-    <div id="categories" >
-      <mat-expansion-panel >
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Fruits & Vegies
-          </mat-panel-title> 
-        </mat-expansion-panel-header>
-        <ul>
-          <li *ngFor="let item of listOfFruitsAndVegies" id="item" > 
-            <mat-card class="example-card" >
-              <mat-card-header> 
-                <mat-card-title>{{item.itemName}}</mat-card-title> 
-            </mat-card-header>
-            <img mat-card-image  [src]="item.itemImageUrl"  id="item-image">
-            <mat-card-content>
-              <div>
-                <label>Brand : </label><span><b>{{item.brand}}</b></span>
-              </div>
-              <div>
-                <label>Price : </label>
-                <span><b>{{item.itemLatestPrice}}</b></span>  
-              </div>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>Add to cart</button> 
-            </mat-card-actions>
-          </mat-card>
-        </li> 
-      </ul>
-      </mat-expansion-panel>
-    </div>
+
+<router-outlet></router-outlet>
 <div id="footer">
-  
+   
   <hr>
   <footer >
     <span style="align-content:left">2021</span>
     <span style="align-content:rigt">For Better World</span>
   </footer>
 </div>
-<router-outlet></router-outlet>

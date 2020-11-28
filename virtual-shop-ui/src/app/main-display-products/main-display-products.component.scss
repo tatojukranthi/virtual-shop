@@ -1,0 +1,45 @@
+#categories{
+    margin-top: 20px;
+} 
+
+#title{ 
+    background: green;
+    width: auto;
+    height: 40px; 
+    h3{
+      color: whitesmoke;
+      margin: 20px;
+      padding: 10px;
+    }
+}
+
+#item{
+  margin: 10px;
+  padding: 10px;
+  width: 150px; 
+  height: 100px; 
+  display: inline-block;
+
+  #item-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100px;
+    width: 100px;
+  }
+}
+
+#storeTitle{
+  text-align: center;
+  margin: 30px;
+  height: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+}
+
+#footer{
+  width: 100%;;
+  position: fixed;
+  bottom: 0;
+  margin: 30px;
+}
